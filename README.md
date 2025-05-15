@@ -50,9 +50,9 @@ docker-compose.yml
 ## Troubleshooting
 ### Backup
 ```bash
-docker exec -t postgres-infra_postgres_1 pg_dump -U postgres -d discord > backup.sql
+docker exec -t postgres-infra-postgres-1 pg_dump -U postgres -d discord > backup.sql
 ```
 ### Restore
 ```bash
-cat backup.sql | docker exec -i postgres-infra_postgres_1 psql -U postgres -d discord
+cat backup.sql | docker exec -i postgres-infra-postgres-1 psql -U postgres -d discord
 ```
